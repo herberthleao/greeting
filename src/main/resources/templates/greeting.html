@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Greeting &mdash; Serving Web Content</title>
+    </head>
+    <body>
+        <form>
+            <input name="name" placeholder="Name" />
+            <input type="submit" value="Say" />
+        </form>
+        <p th:text="'Hello, ' + ${name} + '!'"></p>
+        <p>By <a href="https://herberthleao.me">Herberth Leão</a></p>
+    </body>
+</html>
